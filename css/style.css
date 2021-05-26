@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(141, 206, 218);
+}
+h1 {
+    color: rgb(3, 8, 3);
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+img {
+    border:rgb(8, 7, 7) 1px;
+    border-style: dashed;
+    
+}
+.img-rounded{
+    border-radius: 30px;
+    border-style: double;
+}
+
+.color-text {
+    color:rgb(160, 95, 104);
+}
