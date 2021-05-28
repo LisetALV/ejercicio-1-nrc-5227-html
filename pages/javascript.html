@@ -2,9 +2,68 @@
 <html>
     <head>
         <title>Contenido Javascript</title>
+        <link rel="stylesheet" href="../css/style.css">
     </head>
-    <a href= "../home.html">Home</a>
     <body>
-        <h1>Contenido Javascript</h1>
+        <!--<a href= "../home.html">Home</a>-->
+        <div>
+            <a href="../home.html">Inicio</a>
+            <a href="../pages/html.html">Html</a>
+            <a href="../pages/css.html">Css</a>
+            <a href="#">Javascript</a>
+        </div>
+    
+        <h1 id="txtTitulo">Contenido Javascript</h1>
+        <div>
+            <ul> <a href="#txtEjemplo">° Ejemplo</a></ul>
+        </div>
+        <p>JavaScript es el lenguaje de programación más popular del mundo. JavaScript es
+            el lenguaje de programación de la Web.</p>
+        <p>JavaScript es interpretado en el navegador. No compila.</p>
+        <img src="../images/java.JPG" height="60" width="80" alt="HTML-CSS-JS">
+        <hr>
+        <h4 id="txtEjemplo">Ejemplo de Javascript</h4>
+        <p>Al dar clic en el siguiente bot&oacute;n el t&iacute;tulo del contenido va a cambiar. </p>
+        <!-- El atributo tipo evento onclick tiene vinculado una funcion de JavaScript-->
+        <button id="btnClick" onclick="changeTitle()">¡Click!</button>
+        <br>
+        <hr>
+        <h2>Ejercicio con operadores de Javascript</h2>
+        <div>
+            <label for="txtNumero1">Nº1</label>
+            <!-- Input es un elemento que permite el ingreso de valores al documento HTML-->
+            <input type="number" min="0" max="127" value="1" name="txtNumero1" id="txtNumero1">
+        </div>
+        <div>
+            <label for="txtNumero2">Nº2</label>
+            <input type="number" min="1" max="127" value="1" name="txtNumero2" id="txtNumero2">
+        </div>
+        <div>
+            <button class="btn" id="btnSumaHTML" onclick="operar('Ha pulsado el<b> boton</b> HTML')" >Suma Html</button>
+        </div>
+        <div>
+            <input class="btn" id="btnSumaInput" onclick="operar('Ha pulsado el <b> input </b> tipo boton')" type="button" value="Suma Input">
+
+        </div>
+        <div>
+            <label for="txtResultadoSuma">ResultadoSuma</label>
+            <input type="text" name="txtResultadoSuma" id="txtResultadoSuma" readonly>
+
+            <label for="txtResultadoResta">ResultadoResta</label>
+            <input type="text" name="txtResultadoResta" id="txtResultadoResta" readonly>
+
+            <label for="txtResultadoMulti">ResultadoMultiplicacion</label>
+            <input type="text" name="txtResultadoMulti" id="txtResultadoMulti" readonly>
+
+            <label for="txtResultadoDivi">ResultadoDivision</label>
+            <input type="text" name="txtResultadoDivi" id="txtResultadoDivi" readonly>
+        </div>
+        <p id="txtDescripcion" ></p>
+        <br>
+        <footer>
+            <!-- Vinculacion del archivo de JavaScript [Programacion]-->
+            <script src="../js/script-javascript.js"></script>
+            <script src="../js/script-util.js"></script>
+        </footer>
     </body>
 </html>
